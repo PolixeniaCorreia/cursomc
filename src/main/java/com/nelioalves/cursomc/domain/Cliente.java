@@ -52,7 +52,7 @@ public class Cliente implements Serializable {
 		this.email = email;
 		this.cpfOuCnpj = cpfOuCnpj;
 		System.out.println(tipo);
-		this.tipo = tipo.getCod();
+		this.tipo = (tipo == null)? null : tipo.getCod();
 	}
 
 	public Integer getId() {
